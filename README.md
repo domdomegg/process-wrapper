@@ -1,23 +1,14 @@
-# typescript-library-template
+# process-wrapper
 
-Personal template for creating TypeScript libraries.
+🌯 Run binaries from node, with easy stdout/stderr manipulation + signal passthrough + exit code propagation.
 
-## Quick start
-
-1. If it should be published to NPM, add the `NPM_TOKEN` secret. Otherwise, add `"private": true` in `package.json`.
-2. Update the package name, description and repo URL in `package.json`
-3. Add the repo to the [file sync automation rules](https://github.com/domdomegg/domdomegg/blob/master/.github/workflows/repo-file-sync.yaml)
-4. Update the README, using the template commented out below
-
-<!--
-
-# TODO: name of library
-
-TODO: A short description of what the library does, explaining why people might want to use it.
+Useful for building wrappers that affect the behaviour of CLI programs, for example by changing their output format.
 
 ## Usage
 
-TODO: usage instructions
+```
+TODO
+```
 
 ## Contributing
 
@@ -38,5 +29,3 @@ To release:
 1. Use `npm version <major | minor | patch>` to bump the version
 2. Run `git push --follow-tags` to push with tags
 3. Wait for GitHub Actions to publish to the NPM registry.
-
--->
