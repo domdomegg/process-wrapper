@@ -6,8 +6,16 @@ Useful for building wrappers that affect the behaviour of CLI programs, for exam
 
 ## Usage
 
-```
-TODO
+```ts
+import spawnWrapped from 'process-wrapper';
+
+// All arguments and signals are automatically are passed through.
+// If the spawned command exits, this process will too with the same status code.
+// 'line' is a line printed to an output stream. It includes the line terminator at the end.
+spawnWrapped("some-cli", {
+  mapStdout: (line) => "my stdout: " + line,
+  mapStderr: (line) => "my stderr: " + line,
+});
 ```
 
 ## Contributing
